@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,7 +14,7 @@ public class BoardDto {
     private Long number; // 게시물 번호
     private String id; // userid
     private String contents; // 글내용
-    private String date; // 작성날짜
+    private LocalDateTime date; // 작성날짜
     private Long hits; // 조회수
     private Long like; // 좋아요
 

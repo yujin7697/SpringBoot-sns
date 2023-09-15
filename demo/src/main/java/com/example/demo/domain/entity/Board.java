@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.time.LocalDateTime;
 
 @Entity
 @Builder
@@ -22,7 +23,7 @@ public class Board {
     private Long number; // 게시물 번호
     private String id; // userid
     private String contents; // 글내용
-    private String date; // 작성날짜
+    private LocalDateTime date; // 작성날짜
     private Long hits; // 조회수
     private Long like; // 좋아요
 }
